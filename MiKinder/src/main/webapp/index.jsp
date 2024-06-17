@@ -7,15 +7,14 @@
     <title>Formulario de Inscripción</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
- </head>
+</head>
 <body>
 <div class="container">
     <h1>
         <img src="img/titulo.jpg" alt="Logo" class="header-image">
-
     </h1>
     <h2>Formulario de Inscripción</h2>
-    <p>Los campos marcados con(<span class="letra-roja">*</span>)son obligatorias</p>
+    <p>Los campos marcados con(<span class="letra-roja">*</span>) son obligatorios</p>
     <form id="registrationForm" class="col-12">
         <div class="section col-12">
             <h2>Datos del Niño/a</h2>
@@ -62,14 +61,14 @@
         </div>
 
         <div class="section col-12 flex-container">
-            <div class="col-6">
+            <div class="col-6 otros-datos">
                 <h2>Otros Datos de Interés</h2>
                 <label for="allergies">Alergias</label>
                 <textarea id="allergies" name="allergies"></textarea>
                 <label for="foodAllergies">Alergias Alimentarias</label>
                 <textarea id="foodAllergies" name="foodAllergies"></textarea>
             </div>
-            <div class="col-6">
+            <div class="col-6 otros-datos">
                 <label for="medicationIntolerance">Intolerancias Medicación</label>
                 <textarea id="medicationIntolerance" name="medicationIntolerance"></textarea>
                 <label for="observations">Observaciones</label>

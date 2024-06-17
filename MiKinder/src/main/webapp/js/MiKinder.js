@@ -1,6 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Este evento se dispara cuando el DOM ha sido completamente cargado
 
+    // Calcula la fecha máxima permitida (hace 3 años a partir de hoy)
+    const today = new Date();
+    const maxDate = new Date(today.getFullYear() - 3, today.getMonth(), today.getDate());
+    const maxDateString = maxDate.toISOString().split('T')[0];
+
+    // Establece la fecha máxima permitida en el campo de fecha de nacimiento
+    document.getElementById('childBirthDate').setAttribute('max', maxDateString);
+
     // Maneja el clic en el botón para agregar autorización
     document.getElementById('addAuthorizationButton').addEventListener('click', function() {
         addAuthorization();
@@ -113,10 +121,10 @@ function addAuthorization() {
         <label for="authDNI">DNI *</label>
         <input type="text" class="authDNI" required>
         
-        <label for="authPhone">Teléfono *</label>
+        <label for="authPhone">Telefono *</label>
         <input type="text" class="authPhone" required>
         
-        <label for="authRelation">Relación o Parentesco *</label>
+        <label for="authRelation">Relacion o Parentesco *</label>
         <input type="text" class="authRelation" required>
         
         <button type="button" class="remove-auth">Eliminar</button>
