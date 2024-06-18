@@ -1,0 +1,117 @@
+/* responsive.css */
+
+/* Establece el box-sizing en border-box para todos los elementos */
+* {
+    box-sizing: border-box;
+}
+* {
+     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+ }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Establece la fuente predeterminada */
+    background-image: url('../img/1.jpg'); /* Ruta de tu imagen de fondo */
+    background-position: center; /* Centra la imagen en el body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* Estilo para el contenedor principal */
+.container {
+    background-color: rgb(182, 173, 214); /* Fondo del contenedor principal */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* Estilos para encabezados y títulos */
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Ajuste para formularios y etiquetas de entrada */
+form {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="email"], textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 50px;
+}
+
+/* Estilos para botones y enlaces */
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="button"] {
+    background-color: #28A745;
+    margin-top: 10px;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #007BFF;
+    cursor: pointer;
+}
+
+/* Estilos para el contenedor flexible */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Media query para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+.header-image{
+    max-width: 100%;
+}
