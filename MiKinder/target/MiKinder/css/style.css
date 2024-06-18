@@ -112,3 +112,6 @@ a {
         padding: 10px;
     }
 }
+.header-image{
+    max-width: 100%;
+}
