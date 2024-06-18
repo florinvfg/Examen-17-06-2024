@@ -121,10 +121,10 @@ function addAuthorization() {
         <label for="authDNI">DNI *</label>
         <input type="text" class="authDNI" required>
         
-        <label for="authPhone">Telefono *</label>
+        <label for="authPhone">Teléfono *</label>
         <input type="text" class="authPhone" required>
         
-        <label for="authRelation">Relacion o Parentesco *</label>
+        <label for="authRelation">Relación o Parentesco *</label>
         <input type="text" class="authRelation" required>
         
         <button type="button" class="remove-auth">Eliminar</button>
